@@ -1,0 +1,3 @@
+[submodule "pem-bwt"]
+	path = pem-bwt
+	url = https://github.com/dominikkempa/pem-bwt
