@@ -1,10 +1,17 @@
 
-for F in ../abra/abra ../dna.50MB/dna.50MB ../dna/dna ../cere/cere #../dna.txt.16Gi/dna.txt.16Gi 
+MEM_MB="4000"
+MEM="4Gi"
+
+
+for F in ../dna.50MB/dna.50MB
+#../abra/abra ../dna.50MB/dna.50MB ../dna/dna ../cere/cere #../dna.txt.16Gi/dna.txt.16Gi 
 do
 	./sanitize $F
-	./psascan -m 400gi $F
+	echo "./psascan -m  $F"
+	./psascan -m $MEM_MB $F
 	./compute_bwt_parallel $F
-	./construct_lcp_parallel $F -m 400gi
+	./construct_lcp_parallel -m $MEM $F
 	./rle_bwt $F
+	./gen_patterns $F 30 33554432 ${F}.qs
 done
 
