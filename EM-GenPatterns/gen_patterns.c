@@ -197,11 +197,11 @@ int main (int argc, char **argv)
 		for (l = 0; l < len; l++)
 			if (putc (buff[j + l], ofile) != buff[j + l])
 			{
-				fprintf (stderr,
+			/*	fprintf (stderr,
 					 "Error: cannot write file %s\n",
 					 argv[4]);
 				fprintf (stderr, " errno = %i\n", errno);
-				return -1;
+				return -1;*/
 			}
 	}
 
