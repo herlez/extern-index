@@ -24,3 +24,8 @@ cd EM-RL_enc_bwt;
 g++ -std=c++20 -O3 rle_bwt.cpp -o rle_bwt;
 cp rle_bwt ../;
 cd ../;
+
+cd EM-GenPatterns;
+g++ -std=c++20 -O3 gen_patterns.c -o gen_patterns;
+cp gen_patterns ../;
+cd ../;
