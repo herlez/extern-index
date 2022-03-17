@@ -1,0 +1,8 @@
+./compute_bwt_parallel
+./compute_bwt_sequential
+./construct_lcp_parallel
+./construct_lcp_sequential
+./construct_sa
+./gen_patterns
+./lce_bwt
+./sanitize
