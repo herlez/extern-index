@@ -1,3 +1,6 @@
 [submodule "pem-bwt"]
 	path = pem-bwt
 	url = https://github.com/dominikkempa/pem-bwt
+[submodule "psascan"]
+	path = psascan
+	url = https://github.com/dominikkempa/psascan.git

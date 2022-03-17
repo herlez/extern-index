@@ -3,10 +3,10 @@ g++ -std=c++20 -O3 sanitize.cpp -o sanitize;
 cp sanitize ../;
 cd ..
 
-cd pSAscan-0.1.0/src;
+cd psascan;
 make;
-cp psascan ../..;
-cd ../..
+cp construct_sa ../;
+cd ..;
 
 cd pem-bwt;
 make;

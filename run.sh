@@ -1,5 +1,3 @@
-
-MEM_MB="4000"
 MEM="4Gi"
 
 
@@ -8,7 +6,7 @@ for F in ../dna.50MB/dna.50MB
 do
 	./sanitize $F
 	echo "./psascan -m  $F"
-	./psascan -m $MEM_MB $F
+	./construct_sa -m $MEM $F
 	./compute_bwt_parallel $F
 	./construct_lcp_parallel -m $MEM $F
 	./rle_bwt $F
