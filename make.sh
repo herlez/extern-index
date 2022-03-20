@@ -27,5 +27,7 @@ cd ../;
 
 cd EM-GenPatterns;
 g++ -std=c++20 -O3 gen_patterns.c -o gen_patterns;
+g++ -std=c++20 -O3 gen_patterns_dpt.c -o gen_patterns_dpt;
 mv gen_patterns ../;
+mv gen_patterns_dpt ../;
 cd ../;

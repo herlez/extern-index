@@ -4,5 +4,6 @@ construct_lcp_parallel
 construct_lcp_sequential
 construct_sa
 gen_patterns
+gen_patterns_dpt
 rle_bwt
 sanitize
